@@ -46,3 +46,7 @@ public class Servidor implements Database_IF {
 
     }
 }
+
+// compilar: [proj-rmi] javac -d bin $(find src -iname "*.java")
+// servidor: [proj-rmi] java -classpath bin -Djava.rmi.server.hostname=192.168.15.226 -Djava.rmi.server.codebase=file:bin/ Servidor
+
