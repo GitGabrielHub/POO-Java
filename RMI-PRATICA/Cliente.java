@@ -10,7 +10,7 @@ public class Cliente {
         try {
             Registry registry = LocateRegistry.getRegistry(host);
             Database_IF stub = (Database_IF) registry.lookup("operação");
-            Boolean resposta = stub.adiciona("Eu");
+            String resposta = stub.adiciona("Eu");
             System.out.println("resposta: " + resposta);
         } catch (Exception e) {
             System.err.println("Cliente exception: " + e.toString());
