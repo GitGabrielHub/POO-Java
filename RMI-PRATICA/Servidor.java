@@ -9,9 +9,9 @@ public class Servidor implements Database_IF {
     public Servidor(){}
 
     @Override
-    public boolean adiciona(String s) throws RemoteException {
+    public String adiciona(String s) throws RemoteException {
         System.out.println("adicionado");
-        return false;
+        return "OK";
     }
 
     @Override
@@ -38,7 +38,7 @@ public class Servidor implements Database_IF {
             Registry registry = LocateRegistry.createRegistry(1099);
             registry.bind("operação",stub);
 
-            System.err.println("Servidor exception...");
+            System.err.println("Servidor iniciado...");
         } catch (Exception e) {
             System.err.println("Servidor exception: " + e.toString());
             e.printStackTrace();
