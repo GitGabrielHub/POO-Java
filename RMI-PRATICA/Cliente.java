@@ -19,3 +19,5 @@ public class Cliente {
     }
 
 }
+
+//java -classpath . Cliente 192.168.15.226
