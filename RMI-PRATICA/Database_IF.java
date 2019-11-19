@@ -3,7 +3,7 @@ import java.rmi.RemoteException;
 
 public interface Database_IF extends Remote{
 
-    boolean adiciona(String s) throws RemoteException;
+    String adiciona(String s) throws RemoteException;
     boolean remove(String s) throws RemoteException;
     boolean busca(String s) throws RemoteException;
     void lista() throws RemoteException;
