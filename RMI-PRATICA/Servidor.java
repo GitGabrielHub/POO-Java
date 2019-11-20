@@ -37,7 +37,6 @@ public class Servidor implements Database_IF {
     }
 
 
-    //Para terminar, fazer o private cópia
     public String remove(String s) throws RemoteException {
         System.out.println("Chamada de método.");
         Path path = Paths.get(caminho);
